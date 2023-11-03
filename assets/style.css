@@ -20,11 +20,11 @@ body {
     left: 50%;
     margin: 0 auto;
     -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
 }
 
 .headerContent .myName {
-    font-size: 35px;
+    font-size: 25px;
     display: block;
     line-height: 1;
     color: white;
@@ -33,16 +33,58 @@ body {
 @media only screen and (min-width:550px) {
     .headerContent .myName {
         margin: 0;
-        font-size: 70px
+        font-size: 70px;
     }
 }
 
 .headerContent .myDescription {
-    font-size: 20px;
+    font-size: 14px;
     display: block;
     line-height: 1;
     color: white;
-    margin-top: 10px
+    margin-top: 10px;
+}
+
+@media only screen and (min-width:550px) {
+    .header .myDescription {
+        font-size: 28px;
+    }
+}
+
+.headerIcons {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.headerIcons .bx {
+    color: white;
+    text-align: center;
+}
+
+.headerIcons .bx {
+    height: 14px;
+    padding: 10px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    transition: all .7s;
+    width: 14px;
+    font-size: 14px;
+    margin: 5px;
+}
+
+.headerIcons .bx:active,
+.headerIcons .bx:hover {
+    color: black;
+    background: white;
+}
+
+@media only screen and (min-width:550px) {
+    .headerIcons .bx {
+        width: 25px;
+        height: 25px;
+        font-size: 25px;
+    }
 }
 
 .header {
