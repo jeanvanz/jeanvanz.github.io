@@ -1,6 +1,6 @@
 html {
     font-size: 14px;
-    font-family: 'Zen Kaku Gothic New', sans-serif;
+    font-family: 'Nunito', sans-serif;
 }
 
 body {
@@ -24,7 +24,7 @@ body {
 }
 
 .headerContent .myName {
-    font-size: 25px;
+    font-size: 35px;
     display: block;
     line-height: 1;
     color: white;
@@ -33,12 +33,12 @@ body {
 @media only screen and (min-width:550px) {
     .headerContent .myName {
         margin: 0;
-        font-size: 70px;
+        font-size: 90px;
     }
 }
 
 .headerContent .myDescription {
-    font-size: 14px;
+    font-size: 15px;
     display: block;
     line-height: 1;
     color: white;
@@ -47,7 +47,7 @@ body {
 
 @media only screen and (min-width:550px) {
     .header .myDescription {
-        font-size: 28px;
+        font-size: 35px;
     }
 }
 
@@ -63,13 +63,13 @@ body {
 }
 
 .headerIcons .bx {
-    height: 14px;
-    padding: 10px;
+    height: 22px;
+    padding: 8px;
     border-radius: 50%;
-    border: 2px solid #fff;
+    border: 2px solid white;
     transition: all .7s;
-    width: 14px;
-    font-size: 14px;
+    width: 22px;
+    font-size: 22px;
     margin: 5px;
 }
 
@@ -81,9 +81,9 @@ body {
 
 @media only screen and (min-width:550px) {
     .headerIcons .bx {
-        width: 25px;
-        height: 25px;
-        font-size: 25px;
+        width: 37px;
+        height: 37px;
+        font-size: 37px;
     }
 }
 
