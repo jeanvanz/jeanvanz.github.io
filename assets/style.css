@@ -141,7 +141,6 @@ header.sticky {
     width: 80%;
     top: 50%;
     left: 50%;
-    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
 
@@ -176,13 +175,9 @@ header.sticky {
     justify-content: center;
     text-align: center;
 }
-
 .homeIcons .bx {
     color: white;
     text-align: center;
-}
-
-.homeIcons .bx {
     height: 32px;
     padding: 3px;
     border-radius: 50%;
@@ -429,12 +424,12 @@ header.sticky {
 
 /* About Section */
 
-.aboutTitle {
-    font-size: 2.2rem;
+.title {
+    font-size: 1.9rem;
 }
 
 @media only screen and (min-width:550px) {
-    .aboutTitle {
+    .title {
         font-size: 3rem;
     }
 }
@@ -454,12 +449,16 @@ header.sticky {
     }
 }
 
-.aboutImage {
-    margin-bottom: 2rem;
-    height: 20rem;
+.aboutImageDiv{
     display: flex;
     justify-content: center;
-    border-radius:50%;
+}
+.aboutImage {
+    display: flex;
+    margin-bottom: 2rem;
+    height: 20rem;
+    justify-content: center;
+    border-radius: 50%;
 }
 
 .aboutTech {
@@ -509,3 +508,124 @@ header.sticky {
 }
 
 /* Projects Section */
+
+.projectList {
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+}
+
+.projectItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 200px;
+    width: 450px;
+    padding: 1rem;
+    border-radius: 8px;
+    gap: 1rem;
+    background-color: #0f0f0f;
+    box-shadow: #878787 0px 0px 2px;
+}
+
+.projectItemTitle {
+    font-size: 1.2rem;
+}
+
+.projectItemFooter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+.projectGitIcon {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.projectGitIcon .bx {
+    color: white;
+    text-align: center;
+    height: 32px;
+    padding: 3px;
+    border-radius: 50%;
+    border: 2px solid white;
+    transition: all .7s;
+    width: 32px;
+    font-size: 22px;
+    margin: 5px;
+}
+
+.projectGitIcon .bx:active,
+.projectGitIcon .bx:hover {
+    color: black;
+    background: white;
+}
+
+@media only screen and (min-width:550px) {
+    .projectGitIcon .bx {
+        width: 38px;
+        height: 38px;
+        font-size: 28px;
+    }
+}
+
+.projectTech{
+    display: flex;
+    gap: 0.5rem;
+}
+
+.projectTechDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.projectTechText{
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+.htmlCircle{
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background-color: #e34c26;
+    margin: 0px 0.2rem;
+}
+
+.cssCircle{
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background-color: #563d7c;
+    margin: 0px 0.2rem;
+}
+
+.jsCircle{
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background-color: #f1e05a;
+    margin: 0px 0.2rem;
+}
+
+.pythonCircle{
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background-color: #3572A5;
+    margin: 0px 0.2rem;
+}
