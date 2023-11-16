@@ -39,7 +39,7 @@ header {
 
 section {
     padding: 120px 19% 100px;
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
 }
 
 /* Navigation Section */
@@ -176,6 +176,7 @@ header.sticky {
     justify-content: center;
     text-align: center;
 }
+
 .homeIcons .bx {
     color: white;
     text-align: center;
@@ -207,12 +208,93 @@ header.sticky {
 /* Home Background Section */
 
 .rain {
+    display: flex;
     position: absolute;
     top: 0;
     left: 50%;
     transform: translate(-50%, 0);
     width: 250px;
     height: 100%;
+}
+
+.rain:nth-child(1) {
+    --delay: 1s;
+    --duration: 2.2s;
+}
+
+.rain:nth-child(2) {
+    top: -8%;
+    left: 25%;
+    --delay: 2.4s;
+    --duration: 2.1s;
+}
+
+.rain:nth-child(3) {
+    top: -17%;
+    left: 41%;
+    --delay: 1.5s;
+    --duration: 2s;
+}
+
+.rain:nth-child(4) {
+    top: -20%;
+    left: 75%;
+    --delay: 1.9s;
+    --duration: 2.2s;
+}
+
+.rain:nth-child(5) {
+    top: -44%;
+    left: 12%;
+    --delay: 1.7s;
+    --duration: 2.4s;
+}
+
+.rain:nth-child(6) {
+    top: -49%;
+    left: 86%;
+    --delay: 1.1s;
+    --duration: 2.5s;
+}
+
+.rain:nth-child(7) {
+    top: -28%;
+    left: 23%;
+    --delay: 1.4s;
+    --duration: 2s;
+}
+
+.rain:nth-child(8) {
+    top: -12%;
+    left: 65%;
+    --delay: 1.8s;
+    --duration: 2.3s;
+}
+
+.rain:nth-child(9) {
+    top: -3%;
+    left: 71%;
+    --delay: 1.6s;
+    --duration: 2.2s;
+}
+
+.rain:nth-child(10) {
+    top: -12%;
+    left: 80%;
+    --delay: 1.2s;
+    --duration: 2.1s;
+}
+
+@media only screen and (max-width:780px) {
+
+    .rain:nth-child(4),
+    .rain:nth-child(5),
+    .rain:nth-child(6),
+    .rain:nth-child(7),
+    .rain:nth-child(9),
+    .rain:nth-child(10) {
+        display: none;
+    }
 }
 
 .drop {
@@ -225,7 +307,7 @@ header.sticky {
     position: absolute;
     top: calc(100% - 150px);
     left: 50%;
-    animation: fall 2.2s ease-in 1s infinite backwards;
+    animation: fall var(--duration) ease-in var(--delay) infinite backwards;
 }
 
 @keyframes fall {
@@ -263,11 +345,11 @@ header.sticky {
     border-radius: 50%;
     border: 1.5mm solid white;
     position: absolute;
-    animation: spread 2.2s ease-out 1s infinite;
+    animation: spread var(--duration) ease-out var(--delay) infinite backwards;
 }
 
 .ripple:nth-child(2) {
-    animation-delay: 1.4s;
+    animation-delay: calc(var(--delay) + 0.4s);
 }
 
 @keyframes spread {
@@ -319,7 +401,7 @@ header.sticky {
             94% 100%);
     background: white;
     transform-origin: bottom;
-    animation: waterSplash 2.2s ease-out 1s infinite backwards;
+    animation: waterSplash var(--duration) ease-out var(--delay) infinite backwards;
 }
 
 @keyframes waterSplash {
@@ -364,7 +446,7 @@ header.sticky {
     height: 7px;
     bottom: 30px;
     left: 45%;
-    animation: jumpLeft 2.2s ease-out 1.2s infinite;
+    animation: jumpLeft var(--duration) ease-out calc(var(--delay) + 0s) infinite backwards;
 }
 
 .bubble:nth-child(2) {
@@ -372,7 +454,7 @@ header.sticky {
     height: 5px;
     bottom: 100px;
     left: 40%;
-    animation: jumpLeft 2.2s ease-out 1s infinite;
+    animation: jumpLeft var(--duration) ease-out calc(var(--delay) + 0.1s) infinite backwards;
 }
 
 .bubble:nth-child(3) {
@@ -380,7 +462,7 @@ header.sticky {
     height: 6px;
     bottom: 110px;
     right: 50%;
-    animation: jumpRight 2.2s ease-out 1.1s infinite;
+    animation: jumpRight var(--duration) ease-out calc(var(--delay) + 0.2s) infinite backwards;
 }
 
 .bubble:nth-child(4) {
@@ -388,7 +470,7 @@ header.sticky {
     height: 7px;
     bottom: 70px;
     right: 35%;
-    animation: jumpRight 2.2s ease-out 1s infinite;
+    animation: jumpRight var(--duration) ease-out calc(var(--delay) + 0.3s) infinite backwards;
 }
 
 @keyframes jumpLeft {
@@ -450,10 +532,11 @@ header.sticky {
     }
 }
 
-.aboutImageDiv{
+.aboutImageDiv {
     display: flex;
     justify-content: center;
 }
+
 .aboutImage {
     display: flex;
     margin-bottom: 2rem;
@@ -579,23 +662,23 @@ header.sticky {
     }
 }
 
-.projectTech{
+.projectTech {
     display: flex;
     gap: 0.5rem;
 }
 
-.projectTechDiv{
+.projectTechDiv {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.projectTechText{
+.projectTechText {
     font-weight: bold;
     font-size: 0.8rem;
 }
 
-.htmlCircle{
+.htmlCircle {
     display: inline-block;
     height: 12px;
     width: 12px;
@@ -604,7 +687,7 @@ header.sticky {
     margin: 0px 0.2rem;
 }
 
-.cssCircle{
+.cssCircle {
     display: inline-block;
     height: 12px;
     width: 12px;
@@ -613,7 +696,7 @@ header.sticky {
     margin: 0px 0.2rem;
 }
 
-.jsCircle{
+.jsCircle {
     display: inline-block;
     height: 12px;
     width: 12px;
@@ -622,7 +705,7 @@ header.sticky {
     margin: 0px 0.2rem;
 }
 
-.pythonCircle{
+.pythonCircle {
     display: inline-block;
     height: 12px;
     width: 12px;
