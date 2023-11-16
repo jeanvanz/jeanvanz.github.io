@@ -22,6 +22,6 @@ const sr = ScrollReveal ({
     reset: true
 })
 
-sr.reveal('.homeContent',{origin: 'top'});
+sr.reveal('.home',{origin: 'top'});
 sr.reveal('.about',{origin: 'bottom'});
 sr.reveal('.projects',{origin: 'top'});
