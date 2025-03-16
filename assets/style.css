@@ -713,3 +713,12 @@ header.sticky {
     background-color: #3572A5;
     margin: 0px 0.2rem;
 }
+
+.javaCircle {
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background-color: #b07219;
+    margin: 0px 0.2rem;
+}
